@@ -89,6 +89,16 @@ body{
     color: var(--lose-color);
 }
 
+footer { 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(194, 191, 191);
+    color: var(--dark-color);
+    text-align: center;
+  }
+
 @media screen and (max-width: 700px){
     .choice{
         font-size: 110px;
