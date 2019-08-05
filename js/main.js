@@ -92,7 +92,7 @@ function showWinners(winner,computerChoice){
         `;
     }
     score.innerHTML =`
-    <p>Player : ${scoreboard.player}</p>
+    <p>You : ${scoreboard.player}</p>
     <p>Random :${scoreboard.computer}</p>
     `;
 
@@ -110,7 +110,7 @@ function clearModal(e){
 function resetGame(){
     restart.style.display = 'none';
     score.innerHTML =`
-    <p>Player : ${scoreboard.player = 0}</p>
+    <p>You : ${scoreboard.player = 0}</p>
     <p>Random :${scoreboard.computer = 0}</p>
     `;
 }
