@@ -71,7 +71,7 @@ function showWinners(winner,computerChoice){
         result.innerHTML =`
         <h1 class="text-win">You Win</h1>
         <i class="fas fa-hand-${computerChoice} fa-10x"></i>
-        <p>Computer Chose <strong>${computerChoice}</strong></p>
+        <p>They Chose <strong>${computerChoice}</strong></p>
         `;
     }else if(winner ==='you loss'){
         //incr computer score
@@ -80,7 +80,7 @@ function showWinners(winner,computerChoice){
         result.innerHTML =`
         <h1 class="text-lose">You Loss</h1>
         <i class="fas fa-hand-${computerChoice} fa-10x"></i>
-        <p>Computer Chose <strong>${computerChoice}</strong></p>
+        <p>They Chose <strong>${computerChoice}</strong></p>
         `;
     }
     else{
@@ -88,12 +88,12 @@ function showWinners(winner,computerChoice){
         result.innerHTML =`
         <h1>It's a Draw</h1>
         <i class="fas fa-hand-${computerChoice} fa-10x"></i>
-        <p>Computer Chose <strong>${computerChoice}</strong></p>
+        <p>They Chose <strong>${computerChoice}</strong></p>
         `;
     }
     score.innerHTML =`
     <p>Player : ${scoreboard.player}</p>
-    <p>Computer :${scoreboard.computer}</p>
+    <p>Random :${scoreboard.computer}</p>
     `;
 
     modal.style.display = 'block';
@@ -111,7 +111,7 @@ function resetGame(){
     restart.style.display = 'none';
     score.innerHTML =`
     <p>Player : ${scoreboard.player = 0}</p>
-    <p>Computer :${scoreboard.computer = 0}</p>
+    <p>Random :${scoreboard.computer = 0}</p>
     `;
 }
 
